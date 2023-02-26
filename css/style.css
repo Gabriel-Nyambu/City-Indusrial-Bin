@@ -112,7 +112,8 @@ section {
   margin-top: 9rem;
   width: 90%;
   border-radius: 1rem;
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -253,12 +254,26 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.destination .box-container .box .destinations .box-container .box .content .read-more-text {
+.destination
+  .box-container
+  .box
+  .destinations
+  .box-container
+  .box
+  .content
+  .read-more-text {
   display: none;
 }
-.destination .box-container .box .destinations .box-container .box .content .read-more-text--show {
+.destination
+  .box-container
+  .box
+  .destinations
+  .box-container
+  .box
+  .content
+  .read-more-text--show {
   display: inline;
 }
 .destination .box-container .box .content {
@@ -285,11 +300,12 @@ section {
 .destination .box-container .box .content a i {
   padding-right: 0.5rem;
 }
-
+/*package section*/
 .package .package-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
+  margin-top: 1rem;
 }
 .package .package-container .package {
   border-radius: 1rem;
@@ -308,7 +324,7 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .package .package-container .package .package-content span {
   color: #29d9d5;
@@ -348,7 +364,12 @@ section {
 .package .package-container .package .package-content #container-view {
   text-align: center;
 }
-.package .package-container .package .package-content #container-view .btn-package {
+.package
+  .package-container
+  .package
+  .package-content
+  #container-view
+  .btn-package {
   margin-top: 1rem;
   margin-bottom: 2rem;
   display: inline-block;
@@ -360,11 +381,44 @@ section {
   cursor: pointer;
   background: none;
 }
-.package .package-container .package .package-content #container-view .btn-package:hover {
+.package
+  .package-container
+  .package
+  .package-content
+  #container-view
+  .btn-package:hover {
   background: #29d9d5;
   color: #111;
 }
 
+.itinerary-container {
+  width: 80%;
+  margin: 1rem auto;
+  margin-top: 0.5rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(250, 250, 250, 0.3);
+  padding: 3rem 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #22e9e5;
+  font-size: 3rem;
+  display: flexbox;
+}
+.itinerary {
+ display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #111;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .services .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
@@ -398,14 +452,14 @@ section {
 
 .gallery .box-container {
   -moz-columns: 3 25rem;
-       columns: 3 25rem;
+  columns: 3 25rem;
   -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  column-gap: 1.5rem;
 }
 .gallery .box-container .box {
   margin-bottom: 1rem;
   -moz-column-break-inside: avoid;
-       break-inside: avoid;
+  break-inside: avoid;
 }
 .gallery .box-container .box img {
   width: 100%;
@@ -508,7 +562,7 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .blogs .box-container .box .content {
   padding: 2rem;
@@ -545,7 +599,8 @@ section {
 }
 
 .banner {
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/banner.jpeg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url(../images/banner.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;
@@ -577,7 +632,7 @@ section {
 .footer .box-container .box {
   padding: 1rem 0;
   -moz-column-gap: 0.1rem;
-       column-gap: 0.1rem;
+  column-gap: 0.1rem;
 }
 .footer .box-container .box .logo {
   padding-bottom: 1rem;
@@ -677,11 +732,11 @@ section {
     right: 0;
     background: #222;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   .header .navbar a {
     margin: 2rem;
@@ -708,4 +763,4 @@ section {
   .banner .content h3 {
     font-size: 2.7rem;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
