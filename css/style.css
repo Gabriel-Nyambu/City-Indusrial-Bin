@@ -114,7 +114,7 @@ section {
 .home {
   margin: 0 auto;
   margin-top: 9rem;
-  width: 90%;
+  width: 98%;
   border-radius: 1rem;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
@@ -143,6 +143,68 @@ section {
 .home .content p {
   max-width: 60rem;
   margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.coporate .coporate-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+  margin: 1rem auto;
+  margin-top: -10rem;
+  background: #a15c10;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.coporate .coporate-container .coporate-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.coporate .coporate-container .box {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #4b5320;
+  box-shadow: 5px 5px 10px rgba(83, 49, 2, 0.5);
+}
+.coporate .coporate-container .box:hover img {
+  transform: scale(1.1);
+}
+.coporate .coporate-container .box .image {
+  height: 17rem;
+  overflow: hidden;
+  width: 100%;
+}
+.coporate .coporate-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.coporate .coporate-container .box .destinations .box-container .box .content .read-more-text {
+  display: none;
+}
+.coporate .coporate-container .box .destinations .box-container .box .content .read-more-text--show {
+  display: inline;
+}
+.coporate .coporate-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+.coporate .coporate-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+.coporate .coporate-container .box .content p {
+  padding: 1rem 0;
   font-size: 1.4rem;
   color: #aaa;
   line-height: 2;
@@ -300,6 +362,7 @@ section {
 .package .package-container .package {
   border-radius: 1rem;
   background: #a15c10;
+  margin-top: 2rem;
   overflow: hidden;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -310,6 +373,26 @@ section {
   height: 25rem;
   overflow: hidden;
   width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.package .package-container .package .image .day {
+  position: absolute;
+  bottom: 0;
+  left: 5rem;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4b5320;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .package .package-container .package .image img {
   height: 100%;
@@ -317,12 +400,13 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.package .package-container .package .package-content span h2 {
-  color: #fff;
+.package .package-container .package .package-content span h3 {
+  color: #111;
   font-size: 1.5rem;
   text-align: center;
   justify-content: center;
   margin-top: 1rem;
+  font-size: 2.5rem;
 }
 .package .package-container .package .package-content p {
   color: #fff;
@@ -370,6 +454,19 @@ section {
 .package .package-container .package .package-content #container-view .btn-package:hover {
   background: #4b5320;
   color: #fff;
+}
+.package .package-container .package .package-content .day {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.package .package-container .package .package-content .day span {
+  color: #4b5320;
+  font-size: 20px;
 }
 
 /* Column container */
@@ -428,6 +525,40 @@ section {
   font-size: 1.4rem;
   color: #aaa;
   line-height: 2;
+}
+
+.services .box-container .box h3 {
+  color: #fff;
+}
+.services .box-container .box p h2 {
+  color: #fff;
+}
+
+.itinerary-container {
+  width: 80%;
+  margin: 1rem auto;
+  margin-top: 0.5rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgba(83, 49, 2, 0.5);
+  padding: 3rem 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #4b5320;
+  font-size: 3rem;
+  display: flexbox;
+}
+
+.itinerary {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #a15c10;
 }
 
 .gallery .box-container {
