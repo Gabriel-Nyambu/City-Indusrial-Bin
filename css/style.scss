@@ -18,12 +18,15 @@
 }
 
 $blue: #29d9d5;
+$armygreen: #4b5320;
+$background: #f5f5dc;
+$body: #a15c10;
 $black: #111;
 $white: #fff;
 $light-color: #aaa;
 $bg-color: #222;
 $black-bg: rgba(17, 17, 17, 0.7);
-$border: 0.2rem solid $blue;
+$border: 0.1rem solid $white;
 
 @mixin grid($val) {
   display: grid;
@@ -33,12 +36,15 @@ $border: 0.2rem solid $blue;
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
 
   &::-webkit-scrollbar {
-    width: 1rem;
+    width: none;
+    display: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
   &::-webkit-scrollbar-track {
@@ -46,13 +52,13 @@ html {
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $blue;
+    background: $body;
     border-radius: 5rem;
   }
 }
 
 body {
-  background: $black;
+  background: $background;
   overflow-x: hidden;
 }
 
@@ -65,13 +71,13 @@ section {
   margin-bottom: 2rem;
 
   span {
-    color: $blue;
+    color: $body;
     font-size: 2rem;
   }
 
   h1 {
-    font-size: 4rem;
-    color: $white;
+    font-size: 3rem;
+    color: $armygreen;
   }
 }
 
@@ -80,15 +86,16 @@ section {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.7rem;
-  color: $blue;
+  color: $white;
   border: $border;
   border-radius: 5rem;
   cursor: pointer;
-  background: none;
+  background: $armygreen;
+  box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
 
   &:hover {
-    background: $blue;
-    color: $black;
+    background: $armygreen;
+    color: $light-color;
   }
 }
 
@@ -98,7 +105,7 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: $bg-color;
+  background: $body;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,12 +113,12 @@ section {
 
   .navbar a {
     font-size: 1.7rem;
-    color: $light-color;
+    color: $white;
     display: inline-block;
     margin: 0 1rem;
 
     &:hover {
-      color: $blue;
+      color: $black;
     }
   }
 
@@ -121,7 +128,7 @@ section {
 }
 
 .lg-text h1 {
-  color: #aaa;
+  color: $white;
 }
 
 #menu-btn {
@@ -239,12 +246,12 @@ section {
         height: 2rem;
         width: 2rem;
         border-radius: 50%;
-        background: $white;
+        background: $body;
         cursor: pointer;
         margin: 0.7rem;
 
         &:hover {
-          background: $blue;
+          background: $armygreen;
         }
       }
     }
@@ -255,12 +262,12 @@ section {
     margin-bottom: 5rem;
 
     span {
-      color: $blue;
+      color: $body;
       font-size: 2rem;
     }
 
     h3 {
-      color: $white;
+      color: $armygreen;
       font-size: 4rem;
       margin-top: 0.5rem;
     }
@@ -268,8 +275,9 @@ section {
     p {
       padding: 1rem 0;
       font-size: 1.4rem;
-      color: $light-color;
+      color: $armygreen;
       line-height: 2;
+      font-weight: 700;
     }
   }
 }
@@ -280,7 +288,8 @@ section {
   .box {
     border-radius: 1rem;
     overflow: hidden;
-    background: $bg-color;
+    background: $armygreen;
+    box-shadow: 5px 5px 10px rgba(83, 49, 2, 0.5);
 
     &:hover img {
       transform: scale(1.1);
@@ -341,8 +350,9 @@ section {
   @include grid(32rem);
   .package {
     border-radius: 1rem;
-    background: $bg-color;
+    background: $body;
     overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
     &:hover {
       .image img {
@@ -362,15 +372,16 @@ section {
       }
     }
     .package-content {
-      span {
-        color: $blue;
+      span h2 {
+        color: $white;
         font-size: 1.5rem;
         text-align: center;
         justify-content: center;
+        margin-top: 1rem;
       }
       p {
         color: $white;
-        margin: 2rem;
+        margin: 1rem;
         text-align: center;
         font-size: 1.5rem;
         line-height: 2rem;
@@ -381,19 +392,18 @@ section {
         justify-content: center;
 
         a {
-          font-size: 1rem;
-          color: $light-color;
+          font-size: 2rem;
+          color: $white;
           margin: 2rem;
           text-align: center;
 
           &:hover {
-            color: $blue;
+            color: $black;
           }
 
           i {
             padding-right: 0.5rem;
-            color: $blue;
-            margin-top: 1rem;
+            color: $black;
           }
         }
       }
@@ -404,27 +414,26 @@ section {
       #container-view {
         text-align: center;
         .btn-package {
-          margin-top: 1rem;
-          margin-bottom: 2rem;
+          margin-top: 0.5rem;
+          margin-bottom: 1rem;
           display: inline-block;
           padding: 1rem 3rem;
           font-size: 1.7rem;
-          color: $blue;
+          color: $black;
           border: $border;
           border-radius: 5rem;
           cursor: pointer;
           background: none;
 
           &:hover {
-            background: $blue;
-            color: $black;
+            background: $armygreen;
+            color: $white;
           }
         }
       }
     }
   }
 }
-
 
 /* Column container */
 .row {
@@ -439,7 +448,7 @@ section {
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: $bg-color;
+  background-color: $armygreen;
   padding: 2rem;
   color: $white;
 }
@@ -448,7 +457,7 @@ section {
 .main {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
-  background-color: $black-bg;
+  background-color: $armygreen;
   padding: 2rem;
   color: $blue;
 }
@@ -460,11 +469,12 @@ section {
   @include grid(32rem);
 
   .box {
-    background: $bg-color;
+    background: $armygreen;
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 0.5rem;
     text-align: center;
     border: 0.2rem solid $black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
     &:hover {
       border: $border;
@@ -507,13 +517,13 @@ section {
 
     span {
       font-size: 1.4rem;
-      color: $light-color;
+      color: $armygreen;
     }
 
     h3 {
       margin-top: 0.5rem;
       font-size: 2rem;
-      color: $white;
+      color: $body;
     }
   }
 }
@@ -531,12 +541,12 @@ section {
 
     span {
       font-size: 2rem;
-      color: $blue;
+      color: $body;
     }
 
     h3 {
       font-size: 3rem;
-      color: $white;
+      color: $armygreen;
     }
 
     p {
@@ -557,8 +567,9 @@ section {
       flex: 1 1 20rem;
       border-radius: 1rem;
       padding: 2rem;
-      background: $bg-color;
+      background: $armygreen;
       border: 0.2rem solid $black;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
       &:hover {
         border: $border;
@@ -568,7 +579,7 @@ section {
         font-size: 1rem;
         padding-bottom: 1rem;
         line-height: 2;
-        color: $light-color;
+        color: $white;
       }
 
       .user {
@@ -580,6 +591,7 @@ section {
           height: 5rem;
           width: 5rem;
           border-radius: 50%;
+          box-shadow: 5px 5px 10px rgba(252, 251, 251, 0.5);
         }
 
         h3 {
@@ -603,7 +615,7 @@ section {
 
   .box {
     border-radius: 1rem;
-    background: $bg-color;
+    background: $body;
     overflow: hidden;
 
     &:hover {
@@ -632,15 +644,16 @@ section {
         color: $white;
 
         &:hover {
-          color: $blue;
+          color: $armygreen;
         }
       }
 
       p {
         padding: 1rem 0;
         font-size: 1.4rem;
-        color: $light-color;
+        color: $black;
         line-height: 2;
+        font-weight: 700;
       }
 
       .icon {
@@ -651,15 +664,15 @@ section {
 
         a {
           font-size: 1.4rem;
-          color: $light-color;
+          color: $white;
 
           &:hover {
-            color: $blue;
+            color: $black;
           }
 
           i {
             padding-right: 0.5rem;
-            color: $blue;
+            color: $black;
           }
         }
       }
@@ -681,7 +694,9 @@ section {
   .content {
     span {
       font-size: 2rem;
-      color: $blue;
+      color: $body;
+      font-weight: bolder;
+      text-shadow: 1px 1px 2px #dfdede;
     }
 
     h3 {
@@ -714,19 +729,19 @@ section {
 
       h3 {
         font-size: 2.2rem;
-        color: $white;
+        color: $armygreen;
         padding: 1rem 0;
       }
 
       p {
         font-size: 1.4rem;
-        color: $light-color;
+        color: $body;
         padding: 1rem 0;
         line-height: 2;
 
         i {
           padding-right: 0.5rem;
-          color: $blue;
+          color: $black;
         }
       }
 
@@ -741,25 +756,25 @@ section {
           border-radius: 50%;
           font-size: 1.7rem;
           border: $border;
-          color: $blue;
+          color: $armygreen;
           margin-right: 0.5rem;
           text-align: center;
 
           &:hover {
-            background: $blue;
-            color: $black;
+            background: $armygreen;
+            color: $white;
           }
         }
       }
 
       .links {
         font-size: 1.4rem;
-        color: $light-color;
+        color: $body;
         padding: 1rem 0;
         display: block;
 
         &:hover {
-          color: $blue;
+          color: $armygreen;
 
           i {
             padding-right: 2rem;
@@ -768,7 +783,7 @@ section {
 
         i {
           padding-right: 0.5rem;
-          color: $blue;
+          color: $armygreen;
         }
       }
 
@@ -776,10 +791,10 @@ section {
         width: 100%;
         border-radius: 5rem;
         border: $border;
-        background: none;
+        background: $white;
         font-size: 1.5rem;
         text-transform: none;
-        color: $light-color;
+        color: $white;
         margin-bottom: 1rem;
         padding: 1.2rem 1.4rem;
       }
@@ -788,14 +803,14 @@ section {
 }
 
 .credit {
-  background: $bg-color;
+  background: $armygreen;
   text-align: center;
   font-size: 2rem;
   padding: 2rem 1rem;
-  color: $light-color;
+  color: $white;
 
   span {
-    color: $blue;
+    color: $white;
   }
 }
 
