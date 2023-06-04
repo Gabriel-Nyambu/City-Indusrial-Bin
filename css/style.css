@@ -119,7 +119,7 @@ section {
   background: url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-position: center;
   display: flex;
   display: flex;
@@ -193,12 +193,26 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.coporate .coporate-container .box .destinations .box-container .box .content .read-more-text {
+.coporate
+  .coporate-container
+  .box
+  .destinations
+  .box-container
+  .box
+  .content
+  .read-more-text {
   display: none;
 }
-.coporate .coporate-container .box .destinations .box-container .box .content .read-more-text--show {
+.coporate
+  .coporate-container
+  .box
+  .destinations
+  .box-container
+  .box
+  .content
+  .read-more-text--show {
   display: inline;
 }
 .coporate .coporate-container .box .content {
@@ -327,12 +341,26 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.destination .box-container .box .destinations .box-container .box .content .read-more-text {
+.destination
+  .box-container
+  .box
+  .destinations
+  .box-container
+  .box
+  .content
+  .read-more-text {
   display: none;
 }
-.destination .box-container .box .destinations .box-container .box .content .read-more-text--show {
+.destination
+  .box-container
+  .box
+  .destinations
+  .box-container
+  .box
+  .content
+  .read-more-text--show {
   display: inline;
 }
 .destination .box-container .box .content {
@@ -404,7 +432,7 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .package .package-container .package .package-content span h3 {
   color: #111;
@@ -445,7 +473,12 @@ section {
 .package .package-container .package .package-content #container-view {
   text-align: center;
 }
-.package .package-container .package .package-content #container-view .btn-package {
+.package
+  .package-container
+  .package
+  .package-content
+  #container-view
+  .btn-package {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   display: inline-block;
@@ -457,7 +490,12 @@ section {
   cursor: pointer;
   background: none;
 }
-.package .package-container .package .package-content #container-view .btn-package:hover {
+.package
+  .package-container
+  .package
+  .package-content
+  #container-view
+  .btn-package:hover {
   background: #4b5320;
   color: #fff;
 }
@@ -486,7 +524,8 @@ section {
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side { /* IE10 */
+.side {
+  /* IE10 */
   flex: 30%;
   background-color: #4b5320;
   padding: 2rem;
@@ -494,7 +533,8 @@ section {
 }
 
 /* Main column */
-.main { /* IE10 */
+.main {
+  /* IE10 */
   flex: 50%;
   background-color: #4b5320;
   padding: 2rem;
@@ -569,14 +609,14 @@ section {
 
 .gallery .box-container {
   -moz-columns: 3 25rem;
-       columns: 3 25rem;
+  columns: 3 25rem;
   -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  column-gap: 1.5rem;
 }
 .gallery .box-container .box {
   margin-bottom: 1rem;
   -moz-column-break-inside: avoid;
-       break-inside: avoid;
+  break-inside: avoid;
 }
 .gallery .box-container .box img {
   width: 100%;
@@ -681,7 +721,7 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .blogs .box-container .box .content {
   padding: 2rem;
@@ -719,7 +759,8 @@ section {
 }
 
 .banner {
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/banner.jpeg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url(../images/banner.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;
@@ -745,6 +786,46 @@ section {
   line-height: 2;
 }
 
+/*whatsapp  icon */
+.floating-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 5rem;
+  z-index: 9999;
+}
+
+.floating-button a {
+  display: inline-block;
+  margin-left: 10rem;
+  animation: blink-animation 1s infinite;
+}
+.button-text {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2px;
+  color: #4b5320;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.floating-button {
+  animation: pulse 5s infinite;
+  -webkit-animation: pulse 5s infinite;
+}
+
+/* end of whatsapp  */
+
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -753,7 +834,7 @@ section {
 .footer .box-container .box {
   padding: 1rem 0;
   -moz-column-gap: 0.1rem;
-       column-gap: 0.1rem;
+  column-gap: 0.1rem;
 }
 .footer .box-container .box .logo {
   padding-bottom: 1rem;
@@ -853,11 +934,11 @@ section {
     right: 0;
     background: #222;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   .header .navbar a {
     margin: 2rem;
@@ -884,4 +965,4 @@ section {
   .banner .content h3 {
     font-size: 2.7rem;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
