@@ -30,3 +30,9 @@ parentContainer.addEventListener("click", (event) => {
     ? "read less >"
     : "read more >";
 });
+
+
+// write a code for displaying name Gabriel with animation?
+// write a code for displaying cards?
+// 
+// 
