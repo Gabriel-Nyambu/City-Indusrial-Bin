@@ -294,7 +294,7 @@ section {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  background: #a15c10;
+  background: #014701;
   cursor: pointer;
   margin: 0.7rem;
 }
@@ -308,6 +308,7 @@ section {
 .about .content p {
   padding: 0.5rem 0;
   font-family: "Roboto", sans-serif;
+  text-transform:lowercase;
   font-size: 1.4rem;
   color: #4b5320;
   line-height: 2;
@@ -756,7 +757,7 @@ section {
 
 .banner {
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../images/paulahll.jpg) no-repeat;
+    url(../images/slidder\ 2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;
