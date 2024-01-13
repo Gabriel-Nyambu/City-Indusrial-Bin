@@ -30,7 +30,7 @@ html::-webkit-scrollbar {
   -ms-overflow-style: none;
 }
 html::-webkit-scrollbar-track {
-  background: #111;
+  background: #008000;
 }
 html::-webkit-scrollbar-thumb {
   background: #a15c10;
@@ -109,7 +109,7 @@ section {
 
 #menu-btn {
   font-size: 2.5rem;
-  color: #a15c10;
+  color: #144714;
   cursor: pointer;
   display: none;
 }
@@ -308,7 +308,7 @@ section {
 .about .content p {
   padding: 0.5rem 0;
   font-family: "Roboto", sans-serif;
-  text-transform:lowercase;
+  text-transform: none;
   font-size: 1.4rem;
   color: #4b5320;
   line-height: 2;
@@ -323,7 +323,7 @@ section {
 .destination .box-container .box {
   border-radius: 1rem;
   overflow: hidden;
-  background: #4b5320;
+  background: #ffffff;
   box-shadow: 5px 5px 10px rgba(83, 49, 2, 0.5);
 }
 .destination .box-container .box:hover img {
@@ -366,12 +366,15 @@ section {
 }
 .destination .box-container .box .content h3 {
   font-size: 2rem;
-  color: #fff;
+  color: #013a01;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .destination .box-container .box .content p {
+  text-transform: none;
   padding: 1rem 0;
+  font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
-  color: #aaa;
+  color: #008000;
   line-height: 2;
 }
 .destination .box-container .box .content a {
@@ -544,11 +547,11 @@ section {
   gap: 1.5rem;
 }
 .services .box-container .box {
-  background: #4b5320;
+  background: #0c8c0c;
   border-radius: 1rem;
   padding: 0.5rem;
   text-align: center;
-  border: 0.2rem solid #111;
+  border: 0.2rem solid #fbfbfb;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .services .box-container .box:hover {
@@ -565,8 +568,10 @@ section {
 }
 .services .box-container .box p {
   padding: 1rem 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.4rem;
-  color: #aaa;
+  text-transform: none;
+  color: #ffffff;
   line-height: 2;
 }
 
@@ -627,7 +632,7 @@ section {
 .gallery .box-container .box h3 {
   margin-top: 0.5rem;
   font-size: 2rem;
-  color: #a15c10;
+  color: #005500;
 }
 
 .review {
@@ -641,17 +646,25 @@ section {
 }
 .review .content span {
   font-size: 2rem;
-  color: #a15c10;
+  color: #005500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
 }
 .review .content h3 {
   font-size: 3rem;
-  color: #4b5320;
+  color: #008000;
+  font-family: Geneva;
 }
 .review .content p {
   font-size: 1rem;
   color: #aaa;
   padding: 1rem 0;
   line-height: 2;
+}
+.review .content h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #033c03;
+  text-transform: none;
 }
 .review .box-container {
   flex: 1 1 42rem;
@@ -663,8 +676,8 @@ section {
   flex: 1 1 20rem;
   border-radius: 1rem;
   padding: 2rem;
-  background: #4b5320;
-  border: 0.2rem solid #111;
+  background: #005500;
+  border: 0.2rem solid #ffffff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .review .box-container .box:hover {
@@ -703,7 +716,7 @@ section {
 }
 .blogs .box-container .box {
   border-radius: 1rem;
-  background: #a15c10;
+  background: #008000;
   overflow: hidden;
 }
 .blogs .box-container .box:hover .image img {
@@ -725,17 +738,21 @@ section {
 }
 .blogs .box-container .box .content .link {
   font-size: 2rem;
-  color: #fff;
+  color: #013301;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
 }
 .blogs .box-container .box .content .link:hover {
-  color: #4b5320;
+  color: #ffffff;
 }
 .blogs .box-container .box .content p {
   padding: 1rem 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.4rem;
-  color: #111;
+  text-transform: none;
+  color: #ffffff;
   line-height: 2;
-  font-weight: 700;
 }
 .blogs .box-container .box .content .icon {
   padding-top: 1rem;
@@ -748,16 +765,19 @@ section {
   color: #fff;
 }
 .blogs .box-container .box .content .icon a:hover {
-  color: #111;
+  color: #8db600;
 }
 .blogs .box-container .box .content .icon a i {
   padding-right: 0.5rem;
-  color: #111;
+  color: #ffffff;
 }
 
 .banner {
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../images/slidder\ 2.jpg) no-repeat;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../images/Nairobi.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;
@@ -770,17 +790,18 @@ section {
   font-weight: bolder;
   text-shadow: 1px 1px 2px #dfdede;
 }
-.banner .content h3 {
-  font-size: 4rem;
-  color: #fff;
+.banner .content p {
+  color: #013a01;
   margin-top: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .banner .content p {
   max-width: 60rem;
   margin: 1rem auto;
   font-size: 1.4rem;
-  color: #aaa;
+  color: #013a01;
   line-height: 2;
+  font-weight: 600;
 }
 
 /*whatsapp  icon */
@@ -797,11 +818,13 @@ section {
   animation: blink-animation 1s infinite;
 }
 .button-text {
+  width: 9rem;
   display: block;
   text-align: center;
   font-size: 1rem;
   margin-top: 2px;
-  color: #4b5320;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
 
 @keyframes pulse {
@@ -821,6 +844,16 @@ section {
   -webkit-animation: pulse 5s infinite;
 }
 
+.button-text {
+  border-radius: 20rem;
+  border: 0.1rem solid #fff;
+  background: #008000;
+  -webkit-border-radius: 20rem;
+  -moz-border-radius: 20rem;
+  -ms-border-radius: 20rem;
+  -o-border-radius: 20rem;
+}
+
 /* end of whatsapp  */
 
 .footer .box-container {
@@ -829,7 +862,7 @@ section {
   gap: 1.5rem;
 }
 .footer .box-container .box {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   -moz-column-gap: 0.1rem;
   column-gap: 0.1rem;
 }
@@ -843,13 +876,14 @@ section {
 }
 .footer .box-container .box p {
   font-size: 1.4rem;
-  color: #a15c10;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #013a01;
   padding: 1rem 0;
   line-height: 2;
 }
 .footer .box-container .box p i {
   padding-right: 0.5rem;
-  color: #111;
+  color: #013a01;
 }
 .footer .box-container .box .share {
   padding-top: 1rem;
@@ -857,24 +891,26 @@ section {
 .footer .box-container .box .share a {
   height: 4.5rem;
   width: 4.5rem;
-  line-height: 4rem;
+  line-height: 4.6rem;
   font-size: 2rem;
   border-radius: 50%;
   font-size: 1.7rem;
-  border: 0.1rem solid #fff;
-  color: #4b5320;
+  border: 0.1rem solid #013a01;
+  color: #008000;
   margin-right: 0.5rem;
   text-align: center;
 }
 .footer .box-container .box .share a:hover {
-  background: #4b5320;
+  background: #008000;
   color: #fff;
 }
 .footer .box-container .box .links {
   font-size: 1.4rem;
-  color: #a15c10;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #008000;
   padding: 1rem 0;
   display: block;
+  line-height: 0rem;
 }
 .footer .box-container .box .links:hover {
   color: #4b5320;
@@ -890,7 +926,7 @@ section {
   width: 100%;
   border-radius: 5rem;
   border: 0.1rem solid #fff;
-  background: #fff;
+  background: #008000;
   font-size: 1.5rem;
   text-transform: none;
   color: #fff;
@@ -899,7 +935,7 @@ section {
 }
 
 .credit {
-  background: #4b5320;
+  background: #013a01;
   text-align: center;
   font-size: 2rem;
   padding: 2rem 1rem;
@@ -907,6 +943,7 @@ section {
 }
 .credit span {
   color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media (max-width: 991px) {
