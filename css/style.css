@@ -778,7 +778,7 @@ section {
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
     ),
-    url(../images/Nairobi.jpg) no-repeat;
+    url(/images/Nairobi.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;
