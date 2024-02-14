@@ -149,11 +149,11 @@ section {
   object-fit: cover;
   background-position: center;
   display: flex;
- // min-height: 80vh;
+  min-height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding-bottom: 30rem;
 
   .content {
     text-align: center;
@@ -202,10 +202,10 @@ section {
   .box {
     border-radius: 1rem;
     height: 100%;
-    width:100%;
+    width: 100%;
     border: $border;
     border-width: 0.5rem;
-    float:left;
+    float: left;
     overflow: hidden;
     background: $armygreen;
     box-shadow: 5px 5px 10px rgba(83, 49, 2, 0.5);
